@@ -16,6 +16,9 @@ app.use(bodyParser.json());
 var client = mqtt.connect(keys.mqttURI);
 
 app.post('/api/locks', async (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
   const { name, ownerId } = req.body;
 
   if (!name || !ownerId || name.trim() === '' || ownerId.trim() === '') {
