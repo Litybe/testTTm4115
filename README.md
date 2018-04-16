@@ -7,6 +7,10 @@
 3. Install NPM dependencies: `npm install`
 4. Start application: `npm run dev`
 
+## Hosting
+
+The backend is hosted on Heroku, and is available on http://sesam.herokuapp.com/.
+
 ## Stack:
 
 * Node.js
