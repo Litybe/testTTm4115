@@ -1,6 +1,4 @@
-// keys.js - figure out what set of credentials to return
-if (process.env.NODE_ENV === 'production') {
-  module.exports = require('./prod');
-} else {
-  module.exports = require('./dev');
-}
+module.exports = {
+  mongoURI: 'mongodb://sesam:jAz72vDS7FXanGbj@ds211309.mlab.com:11309/sesam',
+  mqttURI: 'mqtt://huqjgjtr:TjdUhw4k03rT@m23.cloudmqtt.com:17257',
+};
